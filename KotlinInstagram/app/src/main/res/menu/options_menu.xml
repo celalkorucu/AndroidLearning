@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/users_activity" android:title="Other Users"></item>
+    <item android:id="@+id/profile_activity" android:title="Profile"></item>
+    <item android:id="@+id/add_post" android:title="Add Post"></item>
+    <item android:id="@+id/change_profile_photo" android:title="Change Profile Photo"></item>
+    <item android:id="@+id/sign_out" android:title="Sign Out"></item>
+
+
+
+
+</menu>

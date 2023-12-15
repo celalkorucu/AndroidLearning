@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ProfileActivity">
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/profilePhotoImage"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="30dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/panda" ></de.hdodenhof.circleimageview.CircleImageView>
+
+  <TextView
+      android:id="@+id/followCount"
+      android:layout_width="111dp"
+      android:layout_height="25dp"
+      android:layout_marginTop="20dp"
+      android:onClick="profileFriendsClicked"
+
+      android:text=""
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/profilePhotoImage"
+      app:layout_constraintTop_toTopOf="@+id/profilePhotoImage" />
+
+  <TextView
+      android:id="@+id/info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Following "
+      android:textAlignment="center"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="@+id/followCount"
+      app:layout_constraintStart_toStartOf="@+id/followCount"
+      app:layout_constraintTop_toBottomOf="@+id/followCount" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/profilePostRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="550dp"
+      android:layout_marginTop="100dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileEmailText"
+        android:layout_width="143dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#FF1100"
+        app:layout_constraintStart_toStartOf="@+id/profilePhotoImage"
+        app:layout_constraintTop_toBottomOf="@+id/profilePhotoImage" />
+
+    <TextView
+        android:id="@+id/profileUsernameText"
+        android:layout_width="143dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"
+        android:textColor="#2195F2"
+        app:layout_constraintStart_toStartOf="@+id/profilePhotoImage"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmailText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

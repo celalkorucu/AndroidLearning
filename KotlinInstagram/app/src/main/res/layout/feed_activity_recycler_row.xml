@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        >
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/postProfilePhoto"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:src="@drawable/profilephoto"
+           android:layout_margin="10sp"
+           ></de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30sp"
+            android:text="Celal KORUCU"
+            android:textColor="#2195F2"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="400dp"
+        android:layout_height="480dp"
+        android:layout_margin="10sp"
+        android:layout_marginLeft="20sp"
+        android:src="@drawable/panda"
+        android:layout_gravity="center"
+        android:background="@drawable/post"
+
+       ></ImageView>
+
+   <ImageButton
+       android:id="@+id/postLiked"
+       android:onClick="postLikedClicked"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:src="@drawable/notlike"
+       android:layout_marginLeft="20sp"
+       android:layout_marginTop="5sp"
+       ></ImageButton>
+
+    <TextView
+        android:id="@+id/postLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Not yet liked"
+        android:textSize="20dp"
+        android:textColor="#9F000000"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"></TextView>
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:textSize="20sp"
+        android:layout_marginLeft="20sp"
+
+        android:textColor="#9F000000"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="40dp"></TextView>
+</LinearLayout>
